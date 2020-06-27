@@ -45,6 +45,6 @@ In this implementation, to maximise performance, we consider each individual byt
 Well, you've obviously got to write them down somewhere; you could use a piece of paper, but remember all that storage space we saved by moving our data into π? Why don't we store our file locations there!?! Even better, the location of our files in π is metadata and as [we all know](http://datatechnologytoday.wordpress.com/2010/09/07/on-the-importance-of-metadata/) metadata is becoming more and more important in everything we do. Doesn't it feel great to have generated so much metadata? Why waste time with old fashioned data
 when you can just deal with metadata, and lots of it!
 
-## Yeah, but what happens if lose my file locations?
+## Yeah, but what happens if I lose my file locations?
 
 No problem, the locations are just metadata! Your files are still there, sitting in π - they're never going away, are they?
