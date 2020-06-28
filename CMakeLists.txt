@@ -1,10 +1,12 @@
-cmake_minimum_required(VERSION 3.10)
-
+cmake_minimum_required(VERSION 3.12)
 project(pifs)
 
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -D_FILE_OFFSET_BITS=64 -std=c++2a -O3 -Wall -Wextra -pedantic")
+set(CMAKE_CXX_EXTENSIONS OFF)
+set(CMAKE_CXX_STANDARD 20)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-include_directories(include)
-
-add_executable(pifs src/pifs.cpp)
-target_link_libraries(pifs fuse)
+add_executable(pifs src/main.cpp)
+target_compile_definitions(pifs PRIVATE -D_FILE_OFFSET_BITS=64)
+target_compile_options(pifs PRIVATE -Wall -Wextra -pedantic)
+target_include_directories(pifs PRIVATE include)
+target_link_libraries(pifs fuse3)
