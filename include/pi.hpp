@@ -2,6 +2,7 @@
 
 #include "pi.hpp"
 
+#include <array>
 #include <cmath>
 #include <cstdint>
 #include <unordered_map>
